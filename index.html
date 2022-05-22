@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do humor</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    
+    <header>
+      <h1>JOGO DO HUMOR</h1>
+    </header>
+
+    <!--Navegação Principal-->
+    <main>
+
+      <!--Sessão mudar humor-->
+      <section id="mudarHumorContainer">
+        <!--Button-->
+        <button type="button" id="btnHumor">ALTERAR HUMOR</button>
+
+        <!--Video-->
+        <article>
+          <video autoplay loop muted id="video">
+            <source src="./assets/video/giphy.mp4">
+            <p>Seu navegador não suporta esse video</p>
+          </video>
+        </article>
+
+        <!--Gifs de alteração de humor/texto-->
+        <article>
+          <figure>
+            <img src="./assets/img/curioso.gif" alt="L-death-note" class="gif" id="gif-Um">
+            <figcaption class="descricao-foto" id="descricao-um">PENSATIVO</figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/img/faminto.gif" alt="L-death-note" class="hidden gif" id="gif-Dois">
+            <figcaption class="descricao-foto hidden" id="descricao-dois">FAMINTO</figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/img/atento.gif" alt="L-death-note" class="hidden gif" id="gif-Tres">
+            <figcaption class="descricao-foto hidden" id="descricao-tres">ATENTO</figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/img/agressivo.gif" alt="L-death-note" class="hidden gif" id="gif-Quatro">
+            <figcaption class="descricao-foto hidden" id="descricao-quatro">AGRESSIVO</figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/img/apaixonado.gif" alt="L-death-note" class="hidden gif" id="gif-Cinco">
+            <figcaption class="descricao-foto hidden" id="descricao-cinco">APAIXONADO</figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/img/pensativo.gif" alt="L-death-note" class="hidden gif" id="gif-Seis">
+            <figcaption class="descricao-foto hidden" id="descricao-seis">PENSATIVO</figcaption>
+          </figure>
+
+          <figure>
+            <img src="./assets/img/triste.gif" alt="L-death-note" class="hidden gif" id="gif-Sete">
+            <figcaption class="descricao-foto hidden" id="descricao-sete">TRISTE</figcaption>
+          </figure>
+          
+        </article>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <p>
+        LUIS GUILHERME VIEIRA NEVES
+      </p>
+    </footer>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

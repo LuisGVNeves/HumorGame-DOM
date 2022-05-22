@@ -1,0 +1,115 @@
+/* Utilizar fonte sem ser externa */
+@font-face {
+  font-family: deathNote;
+  src: url("../font/DEATHNOTEFont.ttf");
+}
+
+/* Tirar espaçamento original do site e respeitar os limites da borda */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #272627;
+  height: 100vh;
+}
+
+header h1 {
+  font-family: deathNote;
+  letter-spacing: 1rem;
+  color: aliceblue;
+  text-align: center;
+}
+
+
+/*Mudar humor container*/
+section#mudarHumorContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+/* Botão de mudar humor */
+section#mudarHumorContainer button {
+  padding: 1.3rem;
+  font-size: 1rem;  
+  font-family: deathNote;
+  letter-spacing: 0.4rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 1%;
+}
+
+section#mudarHumorContainer button:hover{
+  background-color: rgb(6, 5, 5);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Video do carinha comendo a maçã = Negativo(-) para ficar em cima */
+#video{
+  width: 30rem;
+  height: 55rem;
+  margin-left: -45rem;
+  margin-top: -32rem;
+}
+
+
+/* Class Hidden para esconder os gifs */
+.hidden {
+  display: none;
+}
+
+/* Gifs */
+figure .gif{
+  width: 750px;
+  height: 500px;
+  margin-top: -20rem;
+  border: 1px solid #000;
+}
+
+/* Descrição da imagem = figcaption */
+figcaption.descricao-foto{
+  color: #fff;
+  font-size: 2rem;  
+  font-family: deathNote;
+  letter-spacing: 0.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* Footer do site */
+footer{
+  font-family: deathNote;
+  letter-spacing: 5px;
+  height: 50px;
+  line-height: 50px; /*Alinhar com tamanho da altura*/
+  color: #FFF;
+  background-color: #000;
+  text-align: center;
+  width: 100%;
+  margin-top: 20%;
+}
+
+/* Responsividade no gif */
+@media screen and (max-width: 800px) {
+  figure .gif{
+    width: 600px;
+  }
+  
+}
+@media screen and (max-width: 700px) {
+  figure .gif{
+    width: 500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  figure .gif{
+    width: 400px;
+  }
+}
